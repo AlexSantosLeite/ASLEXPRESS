@@ -174,4 +174,113 @@ footer a:hover {
   color: #1b885e;
 }
 
+      /* Responsivo */
+/* Estilo do conteúdo principal */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
 
+@media screen and (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+}
+
+/* Estilo das redes sociais */
+
+@media screen and (max-width: 768px) {
+  .social-links {
+    margin-top: 20px;
+  }
+
+  .social-links li {
+    margin: 0 5px;
+  }
+}
+
+/* Estilo do rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #109b94;
+  border-top: 5px solid #1b885e;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #1b885e;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 10px;
+  }
+
+  footer a {
+    margin: 0 5px;
+  }
+}
+
+
+/* Estilo do menu responsivo */
+nav {
+  background-color: #109b94;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.menu-icon span,
+.menu-icon span:before,
+.menu-icon span:after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #19547c;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+
+  .menu.show {
+    transform: scaleY(1);
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
