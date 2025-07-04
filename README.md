@@ -67,4 +67,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 **Alex Santos Leite**
 
 * **GitHub:** [AlexSantosLeite](https://github.com/AlexSantosLeite)
-* **LinkedIn:** [(Alex Santos Leite)](https://www.linkedin.com/in/alex-santos-leite)
+* **LinkedIn:** [Alex Santos Leite](https://www.linkedin.com/in/alex-santos-leite)
