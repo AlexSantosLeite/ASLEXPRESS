@@ -1,75 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASL EXPRESS - Motofrete</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="Javascript/orcamentoJS.js" defer></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <title>Orçamento Rápido de Motoboy - ASL EXPRESS</title>
+    <meta name="description" content="Solicite um orçamento rápido e sem compromisso para sua entrega. Preencha o formulário e receba o valor via WhatsApp em minutos.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
     <header>
-        <nav>
-          <label for="menu-toggle" class="menu-icon"><span></span></label>
-          <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="vantagens.html">Vantagens</a></li>
-            <li><a href="como-funciona.html">Como Funciona</a></li>
-            <li><a href="orcamento.html">Orçamento</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
-      </header>
-         
-    
-    <main>
-        <form>
-            <div>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-            </div>
-            <div>
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required>
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="retirada">Endereço de retirada:</label>
-                <input type="text" id="retirada" name="retirada" required>
-            </div>
-            <div>
-                <label for="entrega">Endereço de entrega:</label>
-                <input type="text" id="entrega" name="entrega" required>
-            </div>
-            <div>
-                <label for="observacao">Observação:</label>
-                <textarea id="observacao" name="observacao"></textarea>      
-            </div>
-            <a id="enviar-btn" href="https://wa.me/message/6H7T6BYXE5EDA1?text=Olá! Gostaria de solicitar esse orçamento." target="_blank">
-                <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
-            </a>
-        </form>
-
-        <div class="t1">
-            <h2 class="bonus">Bônus ASL EXPRESS <br> Ganhe um serviço grátis a cada 10 orçamentos fechados!</h2>
-            <p class="porc">Aproveite nosso programa de bônus ASL EXPRESS e ganhe um serviço grátis a cada 10 orçamentos fechados. O serviço grátis tem limite de até 10km de distância e pode ser utilizado em qualquer um dos nossos destinos atendidos. Não perca essa oportunidade de economizar ainda mais com a ASL Express!</p>
+        <div class="container">
+            <div class="logo">ASL EXPRESS</div>
         </div>
+    </header>
 
-        <a href="https://wa.me/message/6H7T6BYXE5EDA1?text=Olá, gostaria de mais informações." target="_blank" class="whatsapp-button">
-            <i class="fab fa-whatsapp"></i>
-        </a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Principal</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="vantagens.html">Vantagens</a></li>
+            <li><a href="orcamento.html">Orçamento</a></li>
+            <li><a href="contato.html">Contato</a></
+        </ul>
+    </nav>
+
+    <main>
+        <section id="orcamento">
+            <div class="container">
+                <h1 class="section-title">Solicite seu Orçamento</h1>
+                <p style="text-align: center; max-width: 800px; margin: -20px auto 40px;">Preencha os dados abaixo e clique no botão. A mensagem será enviada diretamente para nosso WhatsApp e nossa equipe responderá em poucos minutos com o valor e os detalhes.</p>
+
+                <div class="layout-orcamento">
+
+                    <div class="coluna-form">
+                        <form id="form-orcamento">
+
+                            <label for="nome">Seu Nome Completo:</label>
+                            <input type="text" id="nome" required placeholder="Digite seu nome">
+
+                            <label for="servico">Tipo de Serviço:</label>
+                            <select id="servico" name="servico">
+                                <option value="Normal">Entrega Normal</option>
+                                <option value="Urgente">Entrega Urgente</option>
+                                <option value="Agendado">Entrega Agendada</option>
+                            </select>
+
+                            <label for="ponto-coleta">Endereço de Coleta:</label>
+                            <input type="text" id="ponto-coleta" required placeholder="Inclua CEP e ponto de referência, se possível">
+
+                            <label for="ponto-entrega">Endereço de Entrega:</label>
+                            <input type="text" id="ponto-entrega" required placeholder="Inclua CEP e ponto de referência, se possível">
+                            
+                            <label for="telefone">Seu Telefone (Opcional):</label>
+                            <input type="text" id="telefone" placeholder="Caso prefira um contato por ligação">
+
+                            <label for="descricao">Descrição do Item a ser transportado:</label>
+                            <textarea id="descricao" rows="4" required placeholder="Ex: Documentos, pequeno pacote, flores, etc."></textarea>
+
+                            <button type="submit"><span>Enviar Orçamento via WhatsApp</span></button>
+
+                        </form>
+                    </div>
+
+                    <div class="coluna-info">
+                        <div class="info-box">
+                            <h3>Por que solicitar com a gente?</h3>
+                            <ul>
+                                <li><strong>Resposta Rápida:</strong> Atendimento ágil direto no WhatsApp.</li>
+                                <li><strong>Preço Justo:</strong> Cotações transparentes e sem surpresas.</li>
+                                <li><strong>Segurança Garantida:</strong> Sua encomenda tratada com prioridade.</li>
+                                <li><strong>Flexibilidade:</strong> Adaptamos o serviço à sua necessidade.</li>
+                            </ul>
+                            <hr style="border: 1px solid #333; margin: 20px 0;">
+                            <h3>Prefere falar por telefone?</h3>
+                            <p>Sem problemas! Se preferir, pode nos ligar diretamente para solicitar sua cotação.</p>
+                            <p style="font-size: 1.2em; font-weight: bold;">(11) 94920-7386</p>
+                        </div>
+                    </div>
+
+                </div> 
+            </div>
+        </section>
     </main>
-
     <footer>
-        <p>Copyright &copy; 2023 ASL EXPRESS - Todos os direitos reservados.</p>
-        <a href="politica.html">Política de Privacidade</a>
-        <a href="termos.html">Termos de Uso</a>
+        <p>&copy; 2025 ASL EXPRESS - Todos os direitos reservados.</p>
     </footer>
+
+    <a href="https://wa.me/5511949207386" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
 </body>
 </html>

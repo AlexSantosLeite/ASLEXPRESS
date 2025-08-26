@@ -1,77 +1,121 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASL EXPRESS - Motofrete</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <title>Contato e FAQ - Fale com a ASL EXPRESS</title>
+    <meta name="description" content="Entre em contato com a ASL Express via WhatsApp ou e-mail. Consulte também nossa seção de perguntas frequentes (FAQ ) sobre nossos serviços de motofrete.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
     <header>
-        <nav>
-          <label for="menu-toggle" class="menu-icon"><span></span></label>
-          <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
+        <div class="container">
+            <div class="logo">ASL EXPRESS</div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Principal</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
             <li><a href="vantagens.html">Vantagens</a></li>
-            <li><a href="como-funciona.html">Como Funciona</a></li>
             <li><a href="orcamento.html">Orçamento</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
-      </header>
-      
-    
+            <li><a href="contato.html">Contato</a></
+        </ul>
+    </nav>
+
     <main>
-        <h1>Entre em contato conosco</h1>
-        <p class="pcontato">Se você tem alguma dúvida, sugestão, reclamação ou quer solicitar um serviço, entre em contato conosco pelos meios abaixo:</p>
+        <section id="contact-intro">
+            <div class="container">
+                <h1 class="section-title">Entre em Contato Conosco</h1>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto;">Estamos sempre prontos para atender você. Escolha o canal de sua preferência ou consulte nossas respostas para as dúvidas mais comuns abaixo.</p>
+            </div>
+        </section>
 
-        <div class="box concent t0">
-            <h3>Telefone</h3>
-            <p class="concent">(11) 94920-7386</p>
-        </div>
+        <section id="contact-details" class="how-it-works">
+            <div class="container">
+                <div class="grid-container">
+                    <div class="grid-item contact-item">
+                        <h3>Canais de Atendimento</h3>
+                        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5511949207386" target="_blank">(11) 94920-7386</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:contato@aslexpress.com.br">contato@aslexpress.com.br</a></p>
+                    </div>
 
-        <div class="box concent t0">
-            <h3>E-mail</h3>
-            <p class="concent">alex.s.leite@hotmail.com</p>
-        </div>
+                    <div class="grid-item contact-item">
+                        <h3>Horário de Funcionamento</h3>
+                        <p><i class="fas fa-clock"></i> Segunda a Sexta</p>
+                        <p style="margin-left: 45px;"><strong>8:00 às 22:00</strong></p>
+                    </div>
 
-        <div class="box concent t0">
-            <h3>Endereço</h3>
-            <p class="concent">Rua francisco caminhoa, 65 - São Paulo/SP - CEP: 05791-070</p>
-        </div>
+                    <div class="grid-item contact-item">
+                        <h3>Onde Atuamos</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Atendemos toda a cidade de <strong>São Paulo</strong> Interior e Litoral.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="box t0">
-            <h3 class="concent">Redes sociais</h3>
-            <p class="concent">Você também pode nos encontrar nas redes sociais e acompanhar as novidades da ASL EXPRESS - Motofrete:</p>
+        <section id="faq">
+            <div class="container faq-section">
+                <h2 class="section-title">Perguntas Frequentes (FAQ)</h2>
 
-            <ul class="social-links ulcontato">
-              <li><a href="https://www.facebook.com/alex.s.leitee" target="_blank">
-                <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook">
-              </a></li>
-              <li><a href="https://www.instagram.com/alex.s.leitee/" target="_blank">
-                <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
-              </a></li>
-              <li><a href="https://www.linkedin.com/in/alex-santos-leite/" target="_blank">
-                <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-              </a></li>
-            </ul>
-            
-        </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Quais as formas de pagamento aceitas?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aceitamos Pix, transferência bancária, dinheiro e cartões de débito/crédito (consulte taxas). Para empresas, oferecemos faturamento mensal.</p>
+                    </div>
+                </div>
 
-        <p>Nós estamos sempre à disposição para atendê-lo da melhor forma possível. Entre em contato conosco e teremos o prazer de ajudá-lo!</p>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Posso agendar uma coleta com antecedência?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Você pode agendar suas coletas e entregas com dias de antecedência, garantindo total organização para suas necessidades.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Vocês transportam itens frágeis?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, transportamos itens frágeis. É fundamental que o item esteja devidamente embalado e sinalizado. Informe no momento do orçamento para que nosso motoboy tome os cuidados necessários.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Como é calculado o valor da entrega?
+                    </div>
+                    <div class="faq-answer">
+                        <p>O valor é calculado com base na distância entre o ponto de coleta e o de entrega. Serviços de urgência ou com paradas múltiplas podem ter valores adicionais, sempre informados de forma transparente no orçamento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <a href="https://wa.me/message/6H7T6BYXE5EDA1?text=Olá, gostaria de mais informações." target="_blank" class="whatsapp-button">
-            <i class="fab fa-whatsapp"></i>
-        </a>
     </main>
-    
+
     <footer>
-        <p>Copyright &copy; 2023 ASL EXPRESS - Todos os direitos reservados.</p>
-        <a href="politica.html" target="_blank">Política de Privacidade</a>
-        <a href="termos.html" target="_blank">Termos de Uso</a>
+        <p>&copy; 2025 ASL EXPRESS - Todos os direitos reservados.</p>
     </footer>
+
+    <a href="https://wa.me/5511949207386" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+
 </body>
 </html>
